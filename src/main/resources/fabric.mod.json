@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "morespawnermobs",
+	"version": "${version}",
+	"name": "MoreSpawnerMobs",
+	"description": "Forces spawner to be faster and spawn more!",
+	"authors": [
+		"Lemonnik6484"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/faster-spawners",
+		"sources": "https://github.com/Lemon4ik6484/FasterSpawners"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/morespawnermobs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lemonnik.moremobs.MoreSpawnerMobs"
+		],
+		"fabric-datagen": [
+			"lemonnik.moremobs.MoreSpawnerMobsDataGenerator"
+		]
+	},
+	"mixins": [
+		"morespawnermobs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
